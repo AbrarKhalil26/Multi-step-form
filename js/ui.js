@@ -249,7 +249,7 @@ function finishContent(state) {
 
 export const thanksContent = `
   <div class="text-center flex flex-col justify-center py-10">
-    <img src="assets/images/icon-thank-you.svg" alt="thank you" class="w-15 mx-auto mb-3"/>
+    <img src="./assets/images/icon-thank-you.svg" alt="thank you" class="w-15 mx-auto mb-3"/>
     <h2 class="text-2xl mb-2">Thank you!</h2>
     <p class="sm:w-4/5 mx-auto md:text-[16px]">Thanks for confirming your subscription! We hope you have fun
     using our platform. If you ever need support, please feel free to email us
