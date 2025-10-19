@@ -26,4 +26,4 @@ This web application allows users to:
 - Toastify.js (notifications)
 
 ### 🎨 Design
-![Design Preview](./design/design.png)"# Multi-step-form" 
+![Design Preview](./design/design.png)
