@@ -70,7 +70,7 @@ export function renderContent(state) {
   }
 }
 
-export function infoContent(state) {
+function infoContent(state) {
   return `
     <h2 class="text-2xl mb-2">Personal info</h2>
     <p>Please provide your name, email address, and phone number.</p>
@@ -99,7 +99,7 @@ export function infoContent(state) {
   `;
 }
 
-export function planContent(state) {
+function planContent(state) {
   const { isMonthly, planData } = state;
   return `
     <h2 class="text-2xl mb-2">Select your plan</h2>
@@ -154,7 +154,7 @@ export function planContent(state) {
   `;
 }
 
-export function pickContent(state) {
+function pickContent(state) {
   const { isMonthly, pickData } = state;
   return `
     <h2 class="text-2xl mb-2">Pick add-ons</h2>
@@ -199,7 +199,7 @@ export function pickContent(state) {
   `;
 }
 
-export function finishContent(state) {
+function finishContent(state) {
   const { isMonthly, allData } = state;
   return `
     <h2 class="text-2xl mb-2">Finishing up</h2>
