@@ -45,9 +45,9 @@ export const inputData = [
 
 // planData -------------------------->
 export const planData = [
-  { title: "Arcade", price: 9, icon: "../assets/images/icon-arcade.svg" },
-  { title: "Advanced", price: 12, icon: "../assets/images/icon-advanced.svg" },
-  { title: "Pro", price: 15, icon: "../assets/images/icon-pro.svg" },
+  { title: "Arcade", price: 9, icon: "assets/images/icon-arcade.svg" },
+  { title: "Advanced", price: 12, icon: "assets/images/icon-advanced.svg" },
+  { title: "Pro", price: 15, icon: "assets/images/icon-pro.svg" },
 ];
 
 // Pick add-ons ------------------->
