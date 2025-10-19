@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+/*-----------------------------------
+  Theme colors
+-----------------------------------*/
+
+@layer theme {
+  :root {
+    --color-blue-950: hsl(213, 96%, 18%);
+    --color-purple-600: hsl(243, 100%, 62%);
+    --color-blue-300: hsl(228, 100%, 84%);
+    --color-blue-200: hsl(206, 94%, 87%);
+    --color-red-500: hsl(354, 84%, 57%);
+    --color-grey-500: hsl(231, 11%, 63%);
+    --color-purple-200: hsl(229, 24%, 87%);
+    --color-blue-100: hsl(218, 100%, 97%);
+    --color-blue-50: hsl(231, 100%, 99%);
+    --color-white: hsl(0, 100%, 100%);
+  }
+}
+
+/*-----------------------------------
+Font faces (Ubuntu)
+-----------------------------------*/
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../assets/fonts/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*-----------------------------------
+  Utilities
+-----------------------------------*/
+
+@layer utilities {
+  .font-main {
+    font-family: "Ubuntu", sans-serif;
+  }
+  .bg-mobile {
+    background-image: url(../assets/images/bg-sidebar-mobile.svg);
+  }
+  .active-plan {
+    @apply border-purple-600 bg-blue-100;
+  }
+  .active-menu .circle {
+    @apply bg-blue-200 text-blue-950;
+  }
+  [data-error]{
+    @apply text-red-500;
+  }
+}
+
+/*-----------------------------------
+  Apply base font to all elements
+-----------------------------------*/
+
+@layer base {
+  * {
+    font-family: "Ubuntu", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-blue-950;
+  }
+  p {
+    @apply text-gray-400 text-sm;
+  }
+  label {
+    @apply text-blue-950 font-medium;
+  }
+  input {
+    @apply px-3 py-2 border border-gray-300 rounded-sm cursor-pointer w-full
+      focus:outline-1 outline-purple-600;
+  }
+  input::placeholder{
+    @apply text-gray-400 text-sm;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+}
+.md\:bg-desktop {
+    @media (width >= 48rem) {
+        background-image: url(../assets/images/bg-sidebar-desktop.svg);
+    }
+}
